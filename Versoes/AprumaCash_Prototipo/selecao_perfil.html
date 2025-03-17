@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecionar Perfil</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+            color: #000;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            box-sizing: border-box;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        .radio-group {
+            margin-bottom: 20px;
+        }
+        .radio-group label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .radio-group input[type="radio"] {
+            margin-right: 10px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .theme-toggle {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            font-size: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s;
+        }
+        .dark-theme {
+            background-color: #333;
+            color: #fff;
+        }
+        .dark-theme .container {
+            background-color: #444;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        }
+        .dark-theme button {
+            background-color: #1a73e8;
+        }
+        .dark-theme button:hover {
+            background-color: #0056b3;
+        }
+        .dark-theme .theme-toggle {
+            background-color: #1a73e8;
+        }
+        @media (max-width: 1024px) {
+            .container {
+                padding: 15px;
+                max-width: 55%;
+            }
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+                max-width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>SELECIONE O PERFIL QUE MELHOR SE IDENTIFICAR</h1>
+        <form action="ambiente_ferramentas.html" method="POST">
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="profile" value="comercio-fisico" required>
+                    Comercio Físico
+                    <p>Lorem ipsum dolor sit amet. Eos velit obcaecati sed enim mol</p>
+                </label>
+                <label>
+                    <input type="radio" name="profile" value="comercio-ambulante">
+                    Comercio Ambulante
+                    <p>Lorem ipsum dolor sit amet. Eos velit obcaecati sed enim mol</p>
+                </label>
+                <label>
+                    <input type="radio" name="profile" value="outro">
+                    Outro
+                    <p>Lorem ipsum dolor sit amet. Eos velit obcaecati sed enim mol</p>
+                </label>
+            </div>
+            <button type="submit">Criar Perfil</button>
+        </form>
+    </div>
+    <button class="theme-toggle" onclick="toggleTheme()">🌓</button>
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('dark-theme');
+        }
+    </script>
+</body>
+</html>

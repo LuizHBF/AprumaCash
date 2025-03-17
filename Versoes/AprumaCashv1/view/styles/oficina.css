@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: linear-gradient(0deg, rgb(119, 232, 63), rgb(157, 222, 125), rgb(255, 255, 255));
+    color: #000;
+    transition: background-color 0.3s, color 0.3s;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2CAA37;
+    color: #fff;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000; /* Garante que fique acima de outros elementos */
+}
+
+nav h1 {
+    font-size: 24px;
+}
+nav .icons {
+    display: flex;
+    gap: 10px;
+}
+nav .icons img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+.box {
+    background-color: #ffffff80;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+.box h2 {
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+.box p {
+    margin: 0 0 20px;
+}
+.box button {
+    padding: 10px 20px;
+    background-color: #1D1994;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+.box button:hover {
+    background-color: #120F59;
+}
+
+.dark-theme {
+    background-image: linear-gradient(rgb(29, 25, 148), rgb(4, 13, 38));
+    color: #fff;
+}
+.dark-theme .box {
+    background-color: #071540;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.dark-theme nav {
+    background-color: #071540;
+}
+
+.dark-theme nav h1 {
+    color:#55BF45;
+}
+
+.dark-theme input[type="email"], .dark-theme input[type="password"] {
+    background-color: rgba(0, 0, 0, 0.041);
+    color: #fff;
+    border: 1px solid #838383;
+}
+.dark-theme button {
+    background-color: #55BF45;
+}
+.dark-theme button:hover {
+    background-color: #268C2D;
+}
+.dark-theme .theme-toggle {
+    background-color: #1a73e8;
+}
+
+/* From Uiverse.io by andrew-demchenk0 */ 
+.theme {
+    --bg-color: #fff;
+    --main-color: #323232d0;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    top: 80px;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    background-color: var(--bg-color);
+    border-radius: 100%;
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+  }
