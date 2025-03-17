@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurações</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+            color: #000;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header img {
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+        }
+        h1 {
+            margin: 0;
+            font-size: 20px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .section select, .section input[type="radio"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        .section input[type="radio"] {
+            width: auto;
+        }
+        .section input[type="radio"] + label {
+            margin: 0;
+            display: inline-block;
+            padding-left: 5px;
+        }
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+        }
+        .button-group button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .button-group button:hover {
+            background-color: #0056b3;
+        }
+        .theme-toggle {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            font-size: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s;
+        }
+        .dark-theme {
+            background-color: #333;
+            color: #fff;
+        }
+        .dark-theme .container {
+            background-color: #444;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        }
+        .dark-theme .button-group button {
+            background-color: #1a73e8;
+        }
+        .dark-theme .button-group button:hover {
+            background-color: #0056b3;
+        }
+        .dark-theme .theme-toggle {
+            background-color: #1a73e8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="settings-icon.png" alt="⚙️" onclick="window.location.href='configuracao.html'">
+            <h1>Configurações</h1>
+            <img src="profile-icon.png" alt="🙋‍♂️" onclick="window.location.href='conta.html'">
+        </div>
+        <div class="section">
+            <label for="language">Idioma</label>
+            <select id="language">
+                <option value="pt">Português</option>
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <!-- Adicione mais opções de idioma conforme necessário -->
+            </select>
+        </div>
+        <div class="section">
+            <label>Tema</label>
+            <div>
+                <input type="radio" id="light" name="theme" value="light" checked>
+                <label for="light">Claro</label>
+            </div>
+            <div>
+                <input type="radio" id="dark" name="theme" value="dark">
+                <label for="dark">Escuro</label>
+            </div>
+            <div>
+                <input type="radio" id="device" name="theme" value="device">
+                <label for="device">Dispositivo</label>
+            </div>
+        </div>
+        <div class="button-group">
+            <button onclick="saveSettings()">Salvar Alterações</button>
+            <button onclick="window.location.href='support.html'">Suporte</button>
+            <button onclick="window.location.href='ambiente_ferramentas.html'">Voltar</button>
+        </div>
+    </div>
+    <button class="theme-toggle" onclick="toggleTheme()">🌓</button>
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('dark-theme');
+        }
+        function saveSettings() {
+            alert('Configurações salvas!');
+            // Adicione aqui a lógica para salvar as configurações
+        }
+    </script>
+</body>
+</html>
