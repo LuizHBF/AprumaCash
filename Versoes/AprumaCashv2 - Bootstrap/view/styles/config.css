@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Centraliza verticalmente */
+    align-items: center;      /* Centraliza horizontalmente */
+    min-height: 100vh;        /* Garante altura mínima de toda a tela */
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(0deg, rgb(119, 232, 63), rgb(157, 222, 125), rgb(255, 255, 255));
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container {
+    padding-bottom: 50px; /* Garante espaço extra no final para evitar cortes */
+}
+
+.card {
+    max-width: 600px;
+    margin: 60px auto; /* Dá um espaço no topo para evitar sobreposição com a navbar */
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    height: 80px;
+}
+
+.navbar-brand img {
+    height: 80px;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+.form-select :active{
+    background-color: #120F59;
+}
+
+.form-check {
+    margin-left: -22px;
+}
+
+.form-check input{
+    display: none;
+}
+
+.form-check input + label:before {
+    content: '';
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #dee2e6;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 3px;
+  }
+
+.form-check input:checked + label:before {
+    background-color: white;
+    box-sizing: border-box;
+    border: 5px solid #120F59;
+    padding: 3px;
+  }
+
+.btn {
+    min-width: 120px;
+}
+.btn-outline-primary {
+    border: 2px solid #1D1994;
+    color: #1D1994;
+}
+.btn-outline-primary:hover {
+    border: 2px solid #120F59;
+    background-color: #120F59;
+    transition: 0.23s;
+}
+.btn-outline-primary:active {
+    background-color: #120F59 !important;
+    border: 2px #120F59 solid !important;
+    transform: scale(0.97);
+}
