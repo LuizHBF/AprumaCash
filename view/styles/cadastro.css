@@ -1,0 +1,244 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(135deg, #f8f8f8, #e0e0e0);
+  transition: background-color 0.3s, color 0.3s;
+}
+.container {
+  margin-top: 70px !important;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  transition: background-color 0.3s;
+}
+.btn-primary {
+  background-color: #1D1994;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #120F59;
+  transition: 0.4s;
+}
+.btn-primary:active {
+  background-color: #120F59 !important;
+  border: 2px #120F59 solid !important;
+}
+
+.dark-theme {
+  background-image: linear-gradient(rgb(29, 25, 148), rgb(4, 13, 38));
+  color: #fff;
+}
+.dark-theme .container {
+  background-color: #071540;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+.dark-theme .btn-primary {
+  background-color: #35C63F;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.808);
+  border: none;
+}
+.dark-theme .btn-primary:hover {
+  background-color: #009107;
+  transition: 0.4s;
+}
+.dark-theme .btn-primary:active {
+  background-color: #35C63F !important;
+  border: 2px #35C63F solid !important;
+}
+.dark-theme .container {
+  background-color: #071540;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+.theme {
+  --bg-color: #fff;
+  --main-color: #323232d0;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background-color: var(--bg-color);
+  border-radius: 100%;
+  border: 2px solid var(--main-color);
+  box-shadow: 4px 4px var(--main-color);
+}
+.input {
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  opacity: 0;
+}
+.icon {
+  position: absolute;
+  top: calc(50% -13px);
+  left: calc(50% -13px);
+  width: 26px;
+  height: 26px;
+}
+.icon.icon-moon {
+  fill: var(--main-color);
+}
+.icon.icon-sun {
+  stroke: var(--main-color);
+  display: none;
+}
+.input:checked ~ .icon.icon-sun {
+  display: block;
+}
+.input:checked ~ .icon.icon-moon {
+  display: none;
+}
+.theme:active {
+  box-shadow: 0px 0px var(--main-color);
+  transform: translate(3px, 3px);
+}
+
+#logo {
+  margin-top: -30px;
+}
+
+/* Media Queries para Responsividade */
+
+/* Telas Grandes (Desktops) */
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 900px;
+        padding: 30px;
+    }
+    
+    #logo {
+        margin-top: -40px;
+    }
+}
+
+/* Telas Médias (Tablets e Laptops) */
+@media screen and (max-width: 1199px) {
+    .container {
+        max-width: 800px;
+        padding: 25px;
+    }
+    
+    #logo {
+        margin-top: -35px;
+    }
+}
+
+/* Tablets */
+@media screen and (max-width: 991px) {
+    .container {
+        max-width: 700px;
+        padding: 20px;
+        margin-top: 60px !important;
+    }
+    
+    .theme {
+        width: 30px;
+        height: 30px;
+        top: 15px;
+        right: 15px;
+    }
+    
+    .icon {
+        width: 22px;
+        height: 22px;
+    }
+    
+    #logo {
+        margin-top: -30px;
+    }
+}
+
+/* Dispositivos Móveis Grandes */
+@media screen and (max-width: 767px) {
+    body {
+        padding: 20px;
+    }
+    
+    .container {
+        max-width: 100%;
+        margin: 50px 15px 0 !important;
+        padding: 15px;
+    }
+    
+    .theme {
+        width: 28px;
+        height: 28px;
+        top: 10px;
+        right: 10px;
+    }
+    
+    #logo {
+        margin-top: -25px;
+        width: 80%;
+        max-width: 200px;
+    }
+}
+
+/* Dispositivos Móveis Pequenos */
+@media screen and (max-width: 575px) {
+    body {
+        padding: 15px;
+    }
+    
+    .container {
+        margin: 40px 10px 0 !important;
+        padding: 12px;
+    }
+    
+    .theme {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .icon {
+        width: 20px;
+        height: 20px;
+    }
+    
+    #logo {
+        margin-top: -20px;
+        width: 70%;
+        max-width: 180px;
+    }
+}
+
+/* Ajustes para Telas Muito Pequenas */
+@media screen and (max-width: 375px) {
+    body {
+        padding: 10px;
+    }
+    
+    .container {
+        margin: 30px 8px 0 !important;
+        padding: 10px;
+    }
+    
+    .theme {
+        width: 22px;
+        height: 22px;
+        top: 8px;
+        right: 8px;
+    }
+    
+    .icon {
+        width: 18px;
+        height: 18px;
+    }
+    
+    #logo {
+        margin-top: -15px;
+        width: 60%;
+        max-width: 150px;
+    }
+}

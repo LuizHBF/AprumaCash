@@ -1,0 +1,293 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Centraliza verticalmente */
+    align-items: center;      /* Centraliza horizontalmente */
+    min-height: 100vh;        /* Garante altura mínima de toda a tela */
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f8f8f8, #e0e0e0);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container {
+    padding-bottom: 50px; /* Garante espaço extra no final para evitar cortes */
+    margin-bottom: 80px !important;
+}
+
+/* Cabeçalho */
+.header {
+    margin-top: 100px !important;
+}
+
+.fw-light {
+    color: #1D1994;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.lead {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.8;
+}
+
+.btn-primary {
+    background-color: #1D1994;
+    border: 2px solid #1D1994;
+}
+.btn-primary:hover {
+    background-color: #120F59;
+    transition: 0.23s;
+    border: 2px solid #120F59;
+}
+.btn-outline-primary {
+    border: 2px solid #1D1994;
+    color: #1D1994;
+}
+.btn-outline-primary:hover {
+    border: 2px solid #120F59;
+    background-color: #120F59;
+    transition: 0.23s;
+}
+
+.card {
+    max-width: 800px;
+    margin: 20px auto; /* Dá um espaço no topo para evitar sobreposição com a navbar */
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    height: 100px;
+    background: #343A40 !important;
+}
+
+.navbar-brand img {
+    height: 95px;
+}
+
+img {
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+.form-select :active{
+    background-color: #120F59;
+}
+
+.form-check {
+    margin-left: -22px;
+}
+
+.form-check input{
+    display: none;
+}
+
+.form-check input + label:before {
+    content: '';
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #dee2e6;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 3px;
+  }
+
+.form-check input:checked + label:before {
+    background-color: white;
+    box-sizing: border-box;
+    border: 5px solid #120F59;
+    padding: 3px;
+  }
+
+.btn {
+    min-width: 120px;
+}
+.btn-outline-primary {
+    border: 2px solid #1D1994;
+    color: #1D1994;
+}
+.btn-outline-primary:hover {
+    border: 2px solid #120F59;
+    background-color: #120F59;
+    transition: 0.23s;
+}
+.btn-outline-primary:active {
+    background-color: #120F59 !important;
+    border: 2px #120F59 solid !important;
+    transform: scale(0.97);
+}
+
+.glass-disabled * {
+    opacity: 0.3;
+}
+
+.glass-disabled {
+    position: relative;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+    pointer-events: none; /* impede interação */
+    opacity: 1;
+}
+
+.glass-disabled::before {
+    content: "Em desenvolvimento 🔒";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    color: #000;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 0.5rem 1.2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    font-size: 1rem;
+    z-index: 10;
+    text-align: center;
+}
+
+/* Dispositivos Móveis Grandes */
+@media screen and (max-width: 767px) {
+    body {
+        padding: 20px;
+    }
+    
+    .card {
+        max-width: 100%;
+        margin: 40px 15px;
+    }
+    
+    .titulo-navbar {
+        font-size: 15px;
+    }
+
+    .navbar {
+        height: 100px;
+    }
+
+    .navbar-brand img {
+        height: 45px;
+    }
+
+    #iconU {
+        height: 20px;
+    }
+    #iconS {
+        height: 20px;
+    }
+    
+    h1 {
+        font-size: 18px;
+    }
+    
+    .btn {
+        min-width: 100px;
+    }
+    
+    .glass-disabled::before {
+        font-size: 0.9rem;
+        padding: 0.4rem 1rem;
+    }
+}
+
+/* Dispositivos Móveis Pequenos */
+@media screen and (max-width: 575px) {
+    body {
+        padding: 15px;
+    }
+    
+    .card {
+        margin: 30px 10px;
+    }
+    
+    .titulo-navbar {
+        font-size: 15px;
+    }
+
+    .navbar {
+        height: 100px;
+    }
+
+    .navbar-brand img {
+        height: 45px;
+    }
+
+    #iconU {
+        height: 20px;
+    }
+    #iconS {
+        height: 20px;
+    }
+    
+    h1 {
+        font-size: 16px;
+    }
+    
+    .btn {
+        min-width: 90px;
+    }
+    
+    .glass-disabled::before {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.8rem;
+    }
+}
+
+/* Ajustes para Telas Muito Pequenas */
+@media screen and (max-width: 375px) {
+    body {
+        padding: 10px;
+    }
+    
+    .card {
+        margin: 20px 8px;
+    }
+    
+    .titulo-navbar {
+        font-size: 15px;
+    }
+
+    .navbar {
+        height: 100px;
+    }
+
+    .navbar-brand img {
+        height: 45px;
+    }
+
+    #iconU {
+        height: 20px;
+    }
+    #iconS {
+        height: 20px;
+    }
+    
+    h1 {
+        font-size: 14px;
+    }
+    
+    .btn {
+        min-width: 80px;
+    }
+    
+    .glass-disabled::before {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.6rem;
+    }
+}

@@ -1,0 +1,368 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f8f8f8, #e0e0e0);
+    color: #000;
+    transition: background-color 0.3s, color 0.3s;
+    min-height: 100vh;
+}
+
+/* Container principal */
+.container {
+    padding-bottom: 50px;
+}
+
+/* Cabeçalho */
+.py-3.text-center.container {
+    margin-top: 60px;
+}
+
+.fw-light {
+    color: #1D1994;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.lead {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.8;
+}
+
+/* Cards */
+.card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    border: none;
+}
+
+.card-header {
+    background-color: #1D1994;
+    color: white;
+    border-radius: 8px 8px 0 0 !important;
+    border: none;
+}
+
+.card-title {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+/* Formulários */
+.form-label {
+    font-weight: 600;
+    color: #444;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-control {
+    font-size: 1.1rem;
+    color: #444;
+    border: 1px solid #ced4da;
+    padding: 0.5rem 0.75rem;
+}
+
+.form-control:focus {
+    border-color: #1D1994;
+    box-shadow: 0 0 0 0.2rem rgba(29, 25, 148, 0.15);
+}
+
+/* Botões */
+.btn-primary {
+    background-color: #1D1994;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #120F59;
+    transition: 0.23s;
+}
+
+.btn-primary:active {
+    background-color: #120F59 !important;
+    border: 2px #120F59 solid !important;
+    transform: scale(0.89);
+}
+
+.btn-outline-primary {
+    border: 2px solid #1D1994;
+    color: #1D1994;
+    transition: all 0.23s;
+}
+
+.btn-outline-primary:hover {
+    border: 2px solid #120F59;
+    background-color: #120F59;
+    color: white;
+}
+
+.btn-outline-primary:active {
+    background-color: #120F59 !important;
+    border: 2px #120F59 solid !important;
+    transform: scale(0.97);
+}
+
+.btn-outline-danger:hover {
+    background-color: #a82835;
+    border: 2px solid #a82835;
+    transition: 0.23s;
+}
+
+/* Resultado */
+.resultado {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(29, 25, 148, 0.05);
+    border-left: 5px solid #1D1994;
+    border-radius: 8px;
+    font-size: 1.1rem;
+}
+
+/* Histórico */
+#historico {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#historico::-webkit-scrollbar {
+    width: 8px;
+}
+
+#historico::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+#historico::-webkit-scrollbar-thumb {
+    background: #1D1994;
+    border-radius: 4px;
+}
+
+#historico::-webkit-scrollbar-thumb:hover {
+    background: #120F59;
+}
+
+/* Botão Voltar ao Topo */
+.back-to-top {
+    color: #1D1994;
+    font-size: 1rem;
+    transition: color 0.23s;
+}
+
+.back-to-top:hover {
+    color: #120F59;
+}
+
+/* Media Queries para Responsividade */
+
+/* Telas Grandes (Desktops) */
+@media screen and (min-width: 1200px) {
+    .fw-light {
+        font-size: 3rem;
+    }
+    
+    .lead {
+        font-size: 1.2rem;
+    }
+    
+    .card-title {
+        font-size: 1.4rem;
+    }
+    
+    .form-label {
+        font-size: 1.2rem;
+    }
+    
+    .form-control {
+        font-size: 1.2rem;
+        padding: 0.6rem 0.85rem;
+    }
+    
+    .resultado {
+        font-size: 1.2rem;
+        padding: 20px;
+    }
+    
+    #historico {
+        max-height: 400px;
+    }
+}
+
+/* Telas Médias (Tablets e Laptops) */
+@media screen and (max-width: 1199px) {
+    .fw-light {
+        font-size: 2.8rem;
+    }
+    
+    .lead {
+        font-size: 1.15rem;
+    }
+    
+    .card-title {
+        font-size: 1.3rem;
+    }
+    
+    .form-label {
+        font-size: 1.15rem;
+    }
+    
+    .form-control {
+        font-size: 1.15rem;
+    }
+    
+    .resultado {
+        font-size: 1.15rem;
+    }
+}
+
+/* Tablets */
+@media screen and (max-width: 991px) {
+    .fw-light {
+        font-size: 2.5rem;
+    }
+    
+    .lead {
+        font-size: 1.1rem;
+    }
+    
+    .card-title {
+        font-size: 1.2rem;
+    }
+    
+    .form-label {
+        font-size: 1.1rem;
+    }
+    
+    .form-control {
+        font-size: 1.1rem;
+    }
+    
+    .resultado {
+        font-size: 1.1rem;
+    }
+    
+    #historico {
+        max-height: 350px;
+    }
+}
+
+/* Dispositivos Móveis Grandes */
+@media screen and (max-width: 767px) {
+    .py-3.text-center.container {
+        margin-top: 50px;
+    }
+    
+    .fw-light {
+        font-size: 2.2rem;
+    }
+    
+    .lead {
+        font-size: 1rem;
+    }
+    
+    .card-title {
+        font-size: 1.1rem;
+    }
+    
+    .form-label {
+        font-size: 1rem;
+    }
+    
+    .form-control {
+        font-size: 1rem;
+        padding: 0.4rem 0.65rem;
+    }
+    
+    .resultado {
+        font-size: 1rem;
+        padding: 12px;
+    }
+    
+    #historico {
+        max-height: 300px;
+    }
+}
+
+/* Dispositivos Móveis Pequenos */
+@media screen and (max-width: 575px) {
+    .py-3.text-center.container {
+        margin-top: 40px;
+    }
+    
+    .fw-light {
+        font-size: 2rem;
+    }
+    
+    .lead {
+        font-size: 0.95rem;
+    }
+    
+    .card-title {
+        font-size: 1rem;
+    }
+    
+    .form-label {
+        font-size: 0.95rem;
+    }
+    
+    .form-control {
+        font-size: 0.95rem;
+        padding: 0.35rem 0.6rem;
+    }
+    
+    .resultado {
+        font-size: 0.95rem;
+        padding: 10px;
+    }
+    
+    #historico {
+        max-height: 250px;
+    }
+}
+
+/* Ajustes para Telas Muito Pequenas */
+@media screen and (max-width: 375px) {
+    .py-3.text-center.container {
+        margin-top: 30px;
+    }
+    
+    .fw-light {
+        font-size: 1.8rem;
+    }
+    
+    .lead {
+        font-size: 0.9rem;
+    }
+    
+    .card-title {
+        font-size: 0.95rem;
+    }
+    
+    .form-label {
+        font-size: 0.9rem;
+    }
+    
+    .form-control {
+        font-size: 0.9rem;
+        padding: 0.3rem 0.5rem;
+    }
+    
+    .resultado {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+    
+    #historico {
+        max-height: 200px;
+    }
+}

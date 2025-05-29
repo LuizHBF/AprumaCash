@@ -1,0 +1,498 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f8f8f8, #e0e0e0);
+    color: #000;
+    transition: background-color 0.3s, color 0.3s;
+    min-height: 100vh;
+}
+
+/* Container principal */
+.container {
+    padding-bottom: 50px;
+}
+
+/* Cabeçalho */
+.py-3.text-center.container {
+    margin-top: 60px;
+}
+
+h1 {
+    color: #1D1994;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.lead {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.8;
+}
+
+/* Cards */
+.card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    border: none;
+    margin-bottom: 1.5rem;
+}
+
+.card-header {
+    background-color: #1D1994;
+    color: white;
+    border-radius: 8px 8px 0 0 !important;
+    border: none;
+    padding: 1rem;
+}
+
+.card-title {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+/* Grupos de seleção */
+.checkbox-group {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.scrollable-options {
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 6px;
+    border: 1px solid #dee2e6;
+}
+
+/* Estilização da barra de rolagem */
+.scrollable-options::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scrollable-options::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.scrollable-options::-webkit-scrollbar-thumb {
+    background: #1D1994;
+    border-radius: 4px;
+}
+
+.scrollable-options::-webkit-scrollbar-thumb:hover {
+    background: #120F59;
+}
+
+/* Opções de checkbox */
+.checkbox-option {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.checkbox-option:hover {
+    background-color: #f8f9fa;
+}
+
+.checkbox-option.select-all {
+    border-bottom: 2px solid #dee2e6;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.checkbox-option.select-all label {
+    color: #1D1994;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.checkbox-option label {
+    font-size: 1.1rem;
+    color: #444;
+    margin-left: 0.5rem;
+    margin-top: 4px;
+}
+
+.selected-count {
+    color: #666;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    margin-top: 4px;
+}
+
+/* Formulários */
+.form-label {
+    font-weight: 600;
+    color: #444;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-control, .form-select {
+    font-size: 1.1rem;
+    color: #444;
+    border: 1px solid #ced4da;
+    padding: 0.5rem 0.75rem;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #1D1994;
+    box-shadow: 0 0 0 0.2rem rgba(29, 25, 148, 0.15);
+}
+
+/* Botões */
+.btn {
+    transition: all 0.23s;
+}
+
+.btn-primary {
+    background-color: #1D1994;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #120F59;
+}
+
+.btn-primary:active {
+    background-color: #120F59 !important;
+    border: 2px #120F59 solid !important;
+    transform: scale(0.89);
+}
+
+.btn-outline-primary {
+    border: 2px solid #1D1994;
+    color: #1D1994;
+}
+
+.btn-outline-primary:hover {
+    border: 2px solid #120F59;
+    background-color: #120F59;
+    color: white;
+}
+
+.btn-outline-primary:active {
+    background-color: #120F59 !important;
+    border: 2px #120F59 solid !important;
+    transform: scale(0.97);
+}
+
+/* Tabela de resultados */
+.table {
+    margin-bottom: 0;
+    font-size: 1.1rem;
+}
+
+.table th {
+    background-color: #f8f9fa;
+    color: #1D1994;
+    font-weight: 600;
+    padding: 0.75rem;
+}
+
+.table td {
+    vertical-align: middle;
+    padding: 0.75rem;
+    color: #444;
+}
+
+/* Textos de resultado */
+.resultado-box p {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 0.5rem;
+}
+
+.resultado-box strong {
+    color: #1D1994;
+    font-weight: 600;
+}
+
+/* Botão Voltar ao Topo */
+.back-to-top {
+    color: #1D1994;
+    font-size: 1rem;
+    transition: color 0.23s;
+}
+
+.back-to-top:hover {
+    color: #120F59;
+}
+
+/* Media Queries para Responsividade */
+
+/* Telas Grandes (Desktops) */
+@media screen and (min-width: 1200px) {
+    h1 {
+        font-size: 3rem;
+    }
+    
+    .lead {
+        font-size: 1.2rem;
+    }
+    
+    .card-title {
+        font-size: 1.4rem;
+    }
+    
+    .form-label {
+        font-size: 1.2rem;
+    }
+    
+    .form-control, .form-select {
+        font-size: 1.2rem;
+        padding: 0.6rem 0.85rem;
+    }
+    
+    .checkbox-option label {
+        font-size: 1.2rem;
+    }
+    
+    .checkbox-option.select-all label {
+        font-size: 1.2rem;
+    }
+    
+    .table {
+        font-size: 1.2rem;
+    }
+    
+    .resultado-box p {
+        font-size: 1.2rem;
+    }
+}
+
+/* Telas Médias (Tablets e Laptops) */
+@media screen and (max-width: 1199px) {
+    h1 {
+        font-size: 2.8rem;
+    }
+    
+    .lead {
+        font-size: 1.15rem;
+    }
+    
+    .card-title {
+        font-size: 1.3rem;
+    }
+    
+    .form-label {
+        font-size: 1.15rem;
+    }
+    
+    .form-control, .form-select {
+        font-size: 1.15rem;
+    }
+    
+    .checkbox-option label {
+        font-size: 1.15rem;
+    }
+    
+    .checkbox-option.select-all label {
+        font-size: 1.15rem;
+    }
+    
+    .table {
+        font-size: 1.15rem;
+    }
+    
+    .resultado-box p {
+        font-size: 1.15rem;
+    }
+}
+
+/* Tablets */
+@media screen and (max-width: 991px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    .lead {
+        font-size: 1.1rem;
+    }
+    
+    .card-title {
+        font-size: 1.2rem;
+    }
+    
+    .form-label {
+        font-size: 1.1rem;
+    }
+    
+    .form-control, .form-select {
+        font-size: 1.1rem;
+    }
+    
+    .checkbox-option label {
+        font-size: 1.1rem;
+    }
+    
+    .checkbox-option.select-all label {
+        font-size: 1.1rem;
+    }
+    
+    .table {
+        font-size: 1.1rem;
+    }
+    
+    .resultado-box p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Dispositivos Móveis Grandes */
+@media screen and (max-width: 767px) {
+    .py-3.text-center.container {
+        margin-top: 50px;
+    }
+    
+    h1 {
+        font-size: 2.2rem;
+    }
+    
+    .lead {
+        font-size: 1rem;
+    }
+    
+    .card-title {
+        font-size: 1.1rem;
+    }
+    
+    .form-label {
+        font-size: 1rem;
+    }
+    
+    .form-control, .form-select {
+        font-size: 1rem;
+        padding: 0.4rem 0.65rem;
+    }
+    
+    .checkbox-option label {
+        font-size: 1rem;
+    }
+    
+    .checkbox-option.select-all label {
+        font-size: 1rem;
+    }
+    
+    .table {
+        font-size: 1rem;
+    }
+    
+    .resultado-box p {
+        font-size: 1rem;
+    }
+    
+    .scrollable-options {
+        max-height: 250px;
+    }
+}
+
+/* Dispositivos Móveis Pequenos */
+@media screen and (max-width: 575px) {
+    .py-3.text-center.container {
+        margin-top: 40px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .lead {
+        font-size: 0.95rem;
+    }
+    
+    .card-title {
+        font-size: 1rem;
+    }
+    
+    .form-label {
+        font-size: 0.95rem;
+    }
+    
+    .form-control, .form-select {
+        font-size: 0.95rem;
+        padding: 0.35rem 0.6rem;
+    }
+    
+    .checkbox-option label {
+        font-size: 0.95rem;
+    }
+    
+    .checkbox-option.select-all label {
+        font-size: 0.95rem;
+    }
+    
+    .table {
+        font-size: 0.95rem;
+    }
+    
+    .resultado-box p {
+        font-size: 0.95rem;
+    }
+    
+    .scrollable-options {
+        max-height: 200px;
+    }
+}
+
+/* Ajustes para Telas Muito Pequenas */
+@media screen and (max-width: 375px) {
+    .py-3.text-center.container {
+        margin-top: 30px;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    .lead {
+        font-size: 0.9rem;
+    }
+    
+    .card-title {
+        font-size: 0.95rem;
+    }
+    
+    .form-label {
+        font-size: 0.9rem;
+    }
+    
+    .form-control, .form-select {
+        font-size: 0.9rem;
+        padding: 0.3rem 0.5rem;
+    }
+    
+    .checkbox-option label {
+        font-size: 0.9rem;
+    }
+    
+    .checkbox-option.select-all label {
+        font-size: 0.9rem;
+    }
+    
+    .table {
+        font-size: 0.9rem;
+    }
+    
+    .resultado-box p {
+        font-size: 0.9rem;
+    }
+    
+    .scrollable-options {
+        max-height: 180px;
+    }
+}

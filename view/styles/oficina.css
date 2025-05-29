@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f8f8f8, #e0e0e0);
+    color: #000;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar {
+    height: 100px;
+    background: #343A40;
+}
+.navbar-brand img {
+    height: 95px;
+}
+
+img {
+    cursor: pointer;
+}
+
+.container {
+    margin-top: 80px !important;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    min-height: 200px;
+}
+.btn-primary {
+    background-color: #1D1994;
+    border: none;
+}
+.btn-primary:hover {
+    background-color: #120F59;
+    transition: 0.23s;
+}
+.btn-primary:active {
+    background-color: #120F59 !important;
+    border: 2px #120F59 solid !important;
+    transform: scale(0.89);
+}
+
+.card-text {
+    color: #666;
+}
+
+/* Dispositivos Móveis Grandes */
+@media screen and (max-width: 767px) {
+    .container {
+        margin-top: 70px !important;
+        padding: 0 15px;
+    }
+    
+    .titulo-navbar {
+        font-size: 15px;
+    }
+
+    .navbar {
+        height: 100px;
+    }
+
+    .navbar-brand img {
+        height: 45px;
+    }
+
+    #iconU {
+        height: 20px;
+    }
+    #iconS {
+        height: 20px;
+    }
+    
+    .card {
+        min-height: 180px;
+        margin-bottom: 20px;
+    }
+}
+
+/* Dispositivos Móveis Pequenos */
+@media screen and (max-width: 575px) {
+    .container {
+        margin-top: 60px !important;
+        padding: 0 10px;
+    }
+
+    .titulo-navbar {
+        font-size: 15px;
+    }
+    
+    .navbar {
+        height: 100px;
+    }
+    
+    .navbar-brand img {
+        height: 55px;
+    }
+
+    #iconU {
+        height: 20px;
+    }
+    #iconS {
+        height: 20px;
+    }
+    
+    .card {
+        min-height: 160px;
+        margin-bottom: 15px;
+    }
+    
+    .card-text {
+        font-size: 0.9rem;
+    }
+}
+
+/* Ajustes para Telas Muito Pequenas */
+@media screen and (max-width: 375px) {
+    .container {
+        margin-top: 50px !important;
+    }
+    
+    .titulo-navbar {
+        font-size: 15px;
+    }
+
+    .navbar {
+        height: 100px;
+    }
+
+    .navbar-brand img {
+        height: 45px;
+    }
+
+    #iconU {
+        height: 20px;
+    }
+    #iconS {
+        height: 20px;
+    }
+    
+    .card {
+        min-height: 140px;
+        margin-bottom: 12px;
+    }
+    
+    .card-text {
+        font-size: 0.8rem;
+    }
+}

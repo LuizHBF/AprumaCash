@@ -1,0 +1,514 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f8f8f8, #e0e0e0);
+    color: #000;
+    transition: background-color 0.3s, color 0.3s;
+    min-height: 100vh;
+}
+
+/* Container principal */
+.container {
+    padding-bottom: 50px;
+}
+
+.msg-nenhum-registo {
+    color: #666;
+}
+
+/* Cabeçalho */
+.py-3.text-center.container {
+    margin-top: 60px;
+}
+
+.fw-light {
+    color: #1D1994;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.lead {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.8;
+}
+
+/* Botões */
+.button-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.btn-primary {
+    background-color: #1D1994;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #120F59;
+    transition: 0.23s;
+}
+
+.btn-primary:active {
+    background-color: #120F59 !important;
+    border: 2px #120F59 solid !important;
+    transform: scale(0.89);
+}
+
+.btn-secondary {
+    background-color: #55BF45;
+    border: none;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.808);
+}
+.btn-secondary:hover {
+    background-color: #1fa00c; 
+    transition: 0.23s;
+}
+.btn-secondary:active {
+    background-color: #1fa00c !important;
+    border: 2px #1fa00c solid !important;
+    transform: scale(0.89);
+}
+
+.btn-danger {
+    background-color: transparent;
+    color: #1fa00c;
+    border: 1px solid #1fa00c;
+}
+.btn-danger:hover {
+    border: 1px solid #1fa00c;
+    background-color: #1fa00c;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.808);
+}
+.btn-danger:active {
+    background-color: #1fa00c !important;
+    border: 2px #1fa00c solid !important;
+}
+
+#Can_Lucr{
+    background-color: #6c757d;
+}
+#Can_Lucr:hover {
+    background-color: #5c636a;
+}
+#Can_Lucr:active {
+    background-color: #5c636a !important;
+    transform: scale(0.89);
+    border: none !important;
+}
+
+#Can_Desp{
+    background-color: #6c757d;
+}
+#Can_Desp:hover {
+    background-color: #5c636a;
+}
+#Can_Desp:active {
+    background-color: #5c636a !important;
+    transform: scale(0.89);
+    border: none !important;
+}
+
+/* Tabelas */
+table {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #1D1994;
+    color: white;
+    padding: 15px;
+    text-align: left;
+}
+
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Modal */
+.modal-content {
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.modal-header {
+    background-color: #1D1994;
+    color: white;
+    border-radius: 8px 8px 0 0;
+    border-bottom: none;
+}
+
+.modal-header .btn-close {
+    filter: brightness(0) invert(1);
+}
+
+.modal-body {
+    padding: 1.5rem;
+}
+
+.form-label {
+    font-weight: 600;
+    color: #444;
+}
+
+.form-control {
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 8px 12px;
+}
+
+.form-control:focus {
+    border-color: #1D1994;
+    box-shadow: 0 0 0 0.2rem rgba(29, 25, 148, 0.25);
+}
+
+/* Mensagem de erro */
+#mensagem-erro {
+    padding: 1rem;
+    border-radius: 8px;
+    background: rgba(220, 53, 69, 0.1);
+    border-left: 5px solid #dc3545;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+/* Estado vazio */
+.empty-state {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.empty-state h3 {
+    color: #1D1994;
+    margin-bottom: 1rem;
+}
+
+.empty-state p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Botões de ação na tabela */
+.btn-group {
+    display: flex;
+    gap: 5px;
+}
+
+.btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+}
+
+.btn-outline-secondary {
+    border: 1px solid #6c757d;
+    color: #6c757d;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn-outline-danger {
+    border: 1px solid #dc3545;
+    color: #dc3545;
+}
+
+.btn-outline-danger:hover {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Seção de produtos no modal */
+#produtos {
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+#produtos h5 {
+    color: #1D1994;
+    margin-bottom: 15px;
+}
+
+#produtos p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+#produtos label {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+#produtos input[type="number"] {
+    width: 80px;
+}
+
+/* Botão Voltar */
+.btn-outline-primary {
+    border: 2px solid #1D1994;
+    color: #1D1994;
+    transition: all 0.23s;
+}
+
+.btn-outline-primary:hover {
+    border: 2px solid #120F59;
+    background-color: #120F59;
+    color: white;
+}
+
+.btn-outline-primary:active {
+    background-color: #120F59 !important;
+    border: 2px #120F59 solid !important;
+    transform: scale(0.97);
+}
+
+/* Botão Voltar ao Topo */
+.back-to-top {
+    color: #1D1994;
+    font-size: 1rem;
+    transition: color 0.23s;
+}
+
+.back-to-top:hover {
+    color: #120F59;
+}
+
+/* Media Queries para Responsividade */
+
+/* Telas Grandes (Desktops) */
+@media screen and (min-width: 1200px) {
+    .fw-light {
+        font-size: 3rem;
+    }
+    
+    .lead {
+        font-size: 1.2rem;
+    }
+    
+    th {
+        padding: 18px;
+        font-size: 1.1rem;
+    }
+    
+    td {
+        padding: 15px 18px;
+        font-size: 1.1rem;
+    }
+    
+    .button-group {
+        gap: 15px;
+    }
+    
+    .modal-body {
+        padding: 2rem;
+    }
+}
+
+/* Telas Médias (Tablets e Laptops) */
+@media screen and (max-width: 1199px) {
+    .fw-light {
+        font-size: 2.8rem;
+    }
+    
+    .lead {
+        font-size: 1.15rem;
+    }
+    
+    th {
+        padding: 16px;
+        font-size: 1.05rem;
+    }
+    
+    td {
+        padding: 14px 16px;
+        font-size: 1.05rem;
+    }
+}
+
+/* Tablets */
+@media screen and (max-width: 991px) {
+    .fw-light {
+        font-size: 2.5rem;
+    }
+    
+    .lead {
+        font-size: 1.1rem;
+    }
+    
+    th {
+        padding: 15px;
+        font-size: 1rem;
+    }
+    
+    td {
+        padding: 12px 15px;
+        font-size: 1rem;
+    }
+    
+    .button-group {
+        gap: 8px;
+    }
+    
+    .modal-body {
+        padding: 1.5rem;
+    }
+}
+
+/* Dispositivos Móveis Grandes */
+@media screen and (max-width: 767px) {
+    .py-3.text-center.container {
+        margin-top: 50px;
+    }
+    
+    .fw-light {
+        font-size: 2.2rem;
+    }
+    
+    .lead {
+        font-size: 1rem;
+    }
+    
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    
+    th, td {
+        padding: 10px;
+        font-size: 0.95rem;
+    }
+    
+    .button-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .modal-body {
+        padding: 1rem;
+    }
+    
+    #produtos {
+        padding: 10px;
+    }
+    
+    #produtos input[type="number"] {
+        width: 70px;
+    }
+}
+
+/* Dispositivos Móveis Pequenos */
+@media screen and (max-width: 575px) {
+    .py-3.text-center.container {
+        margin-top: 40px;
+    }
+    
+    .fw-light {
+        font-size: 2rem;
+    }
+    
+    .lead {
+        font-size: 0.95rem;
+    }
+    
+    th, td {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+    
+    .btn-sm {
+        padding: 0.2rem 0.4rem;
+        font-size: 0.8rem;
+    }
+    
+    .empty-state h3 {
+        font-size: 1.2rem;
+    }
+    
+    .empty-state p {
+        font-size: 0.95rem;
+    }
+    
+    #produtos h5 {
+        font-size: 1rem;
+    }
+    
+    #produtos p {
+        font-size: 0.9rem;
+    }
+    
+    #produtos input[type="number"] {
+        width: 60px;
+    }
+}
+
+/* Ajustes para Telas Muito Pequenas */
+@media screen and (max-width: 375px) {
+    .py-3.text-center.container {
+        margin-top: 30px;
+    }
+    
+    .fw-light {
+        font-size: 1.8rem;
+    }
+    
+    .lead {
+        font-size: 0.9rem;
+    }
+    
+    th, td {
+        padding: 6px;
+        font-size: 0.85rem;
+    }
+    
+    .btn-sm {
+        padding: 0.15rem 0.3rem;
+        font-size: 0.75rem;
+    }
+    
+    .empty-state h3 {
+        font-size: 1.1rem;
+    }
+    
+    .empty-state p {
+        font-size: 0.9rem;
+    }
+    
+    .modal-body {
+        padding: 0.8rem;
+    }
+    
+    #produtos {
+        padding: 8px;
+    }
+    
+    #produtos h5 {
+        font-size: 0.95rem;
+    }
+    
+    #produtos p {
+        font-size: 0.85rem;
+    }
+    
+    #produtos input[type="number"] {
+        width: 50px;
+    }
+} 

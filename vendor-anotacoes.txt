@@ -1,0 +1,14 @@
+• Editar o php.ini (C:\xampp\php\php.ini)
+	Procurar por esta linha e descomenta-la:
+		;extension=zip
+
+• Instalar o composer na pasta do projeto (CMD):
+	Comando: composer require phpmailer/phpmailer
+Obs: instalar o Git antes.
+
+Incluir o autoload do Composer no arquivo
+require 'vendor/autoload.php';
+
+link-app-password: https://myaccount.google.com/u/1/apppasswords?rapt=AEjHL4OODN1ikRA5dT59e9AsVcBjZlLm5bmIEnjbrI6v_p7hFHnhhv1QpwSu4CXCHuEq8Bp5JUuMmtutX5yjcp8_Sifj1wK1oxTkSoQqHpvzC-y9dSZiEXU
+
+senha suporte.AprumaCash@gmail.com = apruma1234#

@@ -1,0 +1,381 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f8f8f8, #e0e0e0);
+    color: #000;
+    transition: background-color 0.3s, color 0.3s;
+    min-height: 100vh;
+}
+
+/* Container principal */
+.container {
+    padding-bottom: 50px;
+}
+
+/* Cabeçalho */
+.py-3.text-center.container {
+    margin-top: 60px;
+}
+
+.fw-light {
+    color: #1D1994;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.lead {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.8;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Cards de produtos */
+.card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    border: none;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+    background-color: #1D1994;
+    color: white;
+    border-radius: 8px 8px 0 0 !important;
+    border: none;
+}
+
+.card-title {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-text {
+    font-size: 1.1rem;
+    color: #444;
+}
+
+/* Empty state */
+.empty-state {
+    padding: 3rem 0;
+}
+
+.empty-state h3 {
+    color: #1D1994;
+    margin-bottom: 1rem;
+}
+
+.empty-state p {
+    font-size: 1.1rem;
+}
+
+/* Modal */
+.modal-content {
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.modal-header {
+    background-color: #1D1994;
+    color: white;
+    border-radius: 8px 8px 0 0;
+    border-bottom: none;
+}
+
+.modal-header .btn-close {
+    filter: brightness(0) invert(1);
+}
+
+.modal-body {
+    padding: 1.5rem;
+}
+
+.form-label {
+    font-weight: 600;
+    color: #444;
+}
+
+.input-group-text {
+    background-color: #f8f9fa;
+    border-color: #ced4da;
+}
+
+/* Mensagem de erro */
+#mensagem-erro {
+    padding: 1rem;
+    border-radius: 8px;
+    background: rgba(220, 53, 69, 0.1);
+    border-left: 5px solid #dc3545;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+/* Botão Voltar e Voltar ao Topo */
+.back-to-top {
+    color: #1D1994;
+    font-size: 1rem;
+    transition: color 0.23s;
+}
+
+.back-to-top:hover {
+    color: #120F59;
+}
+
+.btn-outline-primary {
+    border: 2px solid #1D1994;
+    color: #1D1994;
+    transition: all 0.23s;
+}
+
+.btn-outline-primary:hover {
+    border: 2px solid #120F59;
+    background-color: #120F59;
+    color: white;
+}
+
+.btn-outline-primary:active {
+    background-color: #120F59 !important;
+    border: 2px #120F59 solid !important;
+    transform: scale(0.97);
+}
+
+.btn-primary {
+    background-color: #1D1994;
+    border: none;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.808);
+}
+.btn-primary:hover {
+    background-color: #120F59;
+    transition: 0.23s;
+}
+.btn-primary:active {
+    background-color: #120F59 !important;
+    border: 2px #120F59 solid !important;
+    transform: scale(0.89);
+}
+
+.btn-danger {
+    background-color: #55BF45;
+    border: none;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.808);
+}
+.btn-danger:hover {
+    background-color: #1fa00c; 
+    transition: 0.23s;
+}
+.btn-danger:active {
+    background-color: #1fa00c !important;
+    border: 2px #1fa00c solid !important;
+    transform: scale(0.89);
+}
+
+.btn-outline-secondary {
+    color: #1fa00c;
+    border: 1px solid #1fa00c;
+}
+.btn-outline-secondary:hover {
+    border: 2px solid #1fa00c;
+    background-color: #1fa00c;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.808);
+}
+.btn-outline-secondary:active {
+    background-color: #1fa00c !important;
+    border: 2px #1fa00c solid !important;
+}
+
+.btn-outline-danger:hover {
+    background-color: #a82835;
+    border: 2px solid #a82835;
+}
+
+/* Media Queries para Responsividade */
+
+/* Telas Grandes (Desktops) */
+@media screen and (min-width: 1200px) {
+    .fw-light {
+        font-size: 3rem;
+    }
+    
+    .lead {
+        font-size: 1.2rem;
+    }
+    
+    .card-title {
+        font-size: 1.4rem;
+    }
+    
+    .card-text {
+        font-size: 1.2rem;
+    }
+    
+    .button-group {
+        gap: 15px;
+    }
+}
+
+/* Telas Médias (Tablets e Laptops) */
+@media screen and (max-width: 1199px) {
+    .fw-light {
+        font-size: 2.8rem;
+    }
+    
+    .lead {
+        font-size: 1.15rem;
+    }
+    
+    .card-title {
+        font-size: 1.3rem;
+    }
+    
+    .card-text {
+        font-size: 1.15rem;
+    }
+}
+
+/* Tablets */
+@media screen and (max-width: 991px) {
+    .fw-light {
+        font-size: 2.5rem;
+    }
+    
+    .lead {
+        font-size: 1.1rem;
+    }
+    
+    .card-title {
+        font-size: 1.2rem;
+    }
+    
+    .card-text {
+        font-size: 1.1rem;
+    }
+    
+    .button-group {
+        gap: 8px;
+    }
+}
+
+/* Dispositivos Móveis Grandes */
+@media screen and (max-width: 767px) {
+    .py-3.text-center.container {
+        margin-top: 50px;
+    }
+    
+    .fw-light {
+        font-size: 2.2rem;
+    }
+    
+    .lead {
+        font-size: 1rem;
+    }
+    
+    .card-title {
+        font-size: 1.1rem;
+    }
+    
+    .card-text {
+        font-size: 1rem;
+    }
+    
+    .button-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .modal-body {
+        padding: 1rem;
+    }
+}
+
+/* Dispositivos Móveis Pequenos */
+@media screen and (max-width: 575px) {
+    .py-3.text-center.container {
+        margin-top: 40px;
+    }
+    
+    .fw-light {
+        font-size: 2rem;
+    }
+    
+    .lead {
+        font-size: 0.95rem;
+    }
+    
+    .card-title {
+        font-size: 1rem;
+    }
+    
+    .card-text {
+        font-size: 0.95rem;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+    
+    .empty-state h3 {
+        font-size: 1.2rem;
+    }
+    
+    .empty-state p {
+        font-size: 0.95rem;
+    }
+}
+
+/* Ajustes para Telas Muito Pequenas */
+@media screen and (max-width: 375px) {
+    .py-3.text-center.container {
+        margin-top: 30px;
+    }
+    
+    .fw-light {
+        font-size: 1.8rem;
+    }
+    
+    .lead {
+        font-size: 0.9rem;
+    }
+    
+    .card-title {
+        font-size: 0.95rem;
+    }
+    
+    .card-text {
+        font-size: 0.9rem;
+    }
+    
+    .card-body {
+        padding: 0.8rem;
+    }
+    
+    .empty-state h3 {
+        font-size: 1.1rem;
+    }
+    
+    .empty-state p {
+        font-size: 0.9rem;
+    }
+    
+    .modal-body {
+        padding: 0.8rem;
+    }
+}

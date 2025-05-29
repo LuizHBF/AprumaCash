@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background: linear-gradient(135deg, #f8f8f8, #e0e0e0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    height: 100px;
+    background-color: #343A40 !important;
+}
+
+.navbar-brand img {
+    height: 95px;
+}
+
+img {
+    cursor: pointer;
+}
+
+.container-box {
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-custom {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.btn-primary {
+    background-color: #1D1994;
+    border: none;
+}
+.btn-primary:hover {
+    background-color: #120F59;
+    transition: 0.23s;
+}
+.btn-outline-primary {
+    border: 2px solid #1D1994;
+    color: #1D1994;
+}
+.btn-outline-primary:hover {
+    border: 2px solid #120F59;
+    background-color: #120F59;
+    transition: 0.23s;
+}
+.btn-outline-primary:active {
+    background-color: #120F59 !important;
+    border: 2px #120F59 solid !important;
+    transform: scale(0.97);
+}
+
+/* Dispositivos Móveis Grandes */
+@media screen and (max-width: 767px) {
+    body {
+        padding: 20px;
+    }
+    
+    .container-box {
+        max-width: 100%;
+        margin: 0 15px;
+        padding: 15px;
+    }
+    
+    .titulo-navbar {
+        font-size: 15px;
+    }
+
+    .navbar {
+        height: 100px;
+    }
+
+    .navbar-brand img {
+        height: 45px;
+    }
+
+    #iconU {
+        height: 20px;
+    }
+    #iconS {
+        height: 20px;
+    }
+    
+    .btn-custom {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+/* Dispositivos Móveis Pequenos */
+@media screen and (max-width: 575px) {
+    body {
+        padding: 15px;
+    }
+    
+    .container-box {
+        margin: 0 10px;
+        padding: 12px;
+    }
+    
+    .titulo-navbar {
+        font-size: 15px;
+    }
+
+    .navbar {
+        height: 100px;
+    }
+
+    .navbar-brand img {
+        height: 45px;
+    }
+
+    #iconU {
+        height: 20px;
+    }
+    #iconS {
+        height: 20px;
+    }
+    
+    .btn-custom {
+        font-size: 13px;
+        padding: 7px;
+    }
+}
+
+/* Ajustes para Telas Muito Pequenas */
+@media screen and (max-width: 375px) {
+    body {
+        padding: 10px;
+    }
+    
+    .container-box {
+        margin: 0 8px;
+        padding: 10px;
+    }
+    
+    .titulo-navbar {
+        font-size: 15px;
+    }
+
+    .navbar {
+        height: 100px;
+    }
+
+    .navbar-brand img {
+        height: 45px;
+    }
+
+    #iconU {
+        height: 20px;
+    }
+    #iconS {
+        height: 20px;
+    }
+    
+    .btn-custom {
+        font-size: 12px;
+        padding: 6px;
+    }
+}
