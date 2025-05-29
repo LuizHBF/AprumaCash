@@ -38,9 +38,9 @@ Facilitar a vida financeira de quem trabalha por conta própria, com foco em **s
 
 Projeto desenvolvido por:
 - **Luiz Henrique** 🔗 [github.com/LuizHBF](https://github.com/LuizHBF)
-- **Rodrigo Jordão** 🔗 [github.com/LuizHBF](https://github.com/RodrigoJK48)
-- **Moysés Antunes** 🔗 [github.com/LuizHBF](https://github.com/moyses-antunese)
-- **Guilherme Oliveira** 🔗 [github.com/LuizHBF](https://github.com/Guilherme23-br)
+- **Rodrigo Jordão** 🔗 [github.com/RodrigoJK48](https://github.com/RodrigoJK48)
+- **Moysés Antunes** 🔗 [github.com/moyses-antunese](https://github.com/moyses-antunese)
+- **Guilherme Oliveira** 🔗 [github.com/Guilherme23-br](https://github.com/Guilherme23-br)
 
 ---
 
