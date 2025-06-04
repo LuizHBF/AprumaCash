@@ -52,7 +52,7 @@
                     <p>Olá {$usuario['nomeUsu']},</p>
                     <p>Recebemos uma solicitação para redefinir sua senha.</p>
                     <p>Clique no link abaixo para criar uma nova senha:</p>
-                    <p><a href='http://localhost/AprumaCashv3%20-%20Bootstrap/view/novaSenha.php?token={$token}'>Redefinir Senha</a></p>
+                    <p><a href='http://localhost/AprumaCash%20-%20Final/view/novaSenha.php?token={$token}'>Redefinir Senha</a></p>
                     <p>Este link expira em 1 hora.</p>
                     <p>Se você não solicitou esta alteração, ignore este email.</p>
                 ";
